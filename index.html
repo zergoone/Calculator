@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiTool Calc Hub - Your Ultimate Calculator Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-section">
+                    <h1 class="logo">🧮 MultiTool Calc Hub</h1>
+                    <p class="tagline">Your Ultimate Calculator Collection</p>
+                </div>
+                <div class="header-info">
+                    <div class="info-item">
+                        <span class="info-icon">⚡</span>
+                        <span>Lightning Fast</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🔒</span>
+                        <span>100% Secure</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <span>Mobile Ready</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#calculators">Calculators</a></li>
+                    <li><a href="#" onclick="openModal('about')">About</a></li>
+                    <li><a href="#" onclick="openModal('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="home">
+                    <section class="hero">
+                <div class="hero-content">
+                    <h2>Professional Calculator Suite for Every Need</h2>
+                    <p class="hero-subtitle">Powerful, accurate, and lightning-fast calculations at your fingertips</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Calculators</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Free</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Registration</span>
+                        </div>
+                    </div>
+                    <a href="#calculators" class="cta-button">Start Calculating Now</a>
+                </div>
+            </section>
+
+        <div class="container">
+            <!-- Hero Section -->
+
+
+            <!-- Calculators Grid -->
+            <section class="calculators-section" id="calculators">
+                <div class="section-header">
+                    <h2>Choose Your Calculator</h2>
+                    <p>Professional tools for everyday calculations</p>
+                </div>
+                
+                <div class="calculators-grid">
+                    <!-- Health & Fitness -->
+                    <div class="calc-card" data-calc="bmi">
+                        <div class="calc-icon">⚖️</div>
+                        <h3>BMI Calculator</h3>
+                        <p>Calculate your Body Mass Index with health categories</p>
+                        <div class="calc-badge">Health</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="calorie">
+                        <div class="calc-icon">🔥</div>
+                        <h3>Calorie Calculator</h3>
+                        <p>Calculate daily calorie needs and burn rates</p>
+                        <div class="calc-badge">Health</div>
+                    </div>
+
+                    <!-- Personal -->
+                    <div class="calc-card" data-calc="age">
+                        <div class="calc-icon">🎂</div>
+                        <h3>Age Calculator</h3>
+                        <p>Calculate your exact age in years, months, and days</p>
+                        <div class="calc-badge">Personal</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="grade">
+                        <div class="calc-icon">📝</div>
+                        <h3>Grade Calculator</h3>
+                        <p>Calculate GPA, weighted grades, and final scores</p>
+                        <div class="calc-badge">Education</div>
+                    </div>
+
+                    <!-- Business & Finance -->
+                    <div class="calc-card" data-calc="discount">
+                        <div class="calc-icon">💰</div>
+                        <h3>Discount Calculator</h3>
+                        <p>Calculate discounts, savings, and final prices</p>
+                        <div class="calc-badge">Business</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="profit">
+                        <div class="calc-icon">📊</div>
+                        <h3>Profit Margin Calculator</h3>
+                        <p>Calculate profit margins and markup percentages</p>
+                        <div class="calc-badge">Business</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="tip">
+                        <div class="calc-icon">🍽️</div>
+                        <h3>Tip Calculator</h3>
+                        <p>Calculate tips and split bills among friends</p>
+                        <div class="calc-badge">Personal</div>
+                    </div>
+
+                    <!-- Finance -->
+                    <div class="calc-card" data-calc="loan">
+                        <div class="calc-icon">🏦</div>
+                        <h3>Loan Calculator</h3>
+                        <p>Calculate monthly payments and total interest</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="emi">
+                        <div class="calc-icon">💳</div>
+                        <h3>EMI Calculator</h3>
+                        <p>Calculate equated monthly installments</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="compound">
+                        <div class="calc-icon">💹</div>
+                        <h3>Compound Interest</h3>
+                        <p>Calculate compound interest and investment growth</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <!-- Tax -->
+                    <div class="calc-card" data-calc="gst">
+                        <div class="calc-icon">📋</div>
+                        <h3>GST Calculator</h3>
+                        <p>Calculate GST amounts and tax-inclusive prices</p>
+                        <div class="calc-badge">Tax</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="salary">
+                        <div class="calc-icon">💼</div>
+                        <h3>Salary Calculator</h3>
+                        <p>Calculate take-home salary after taxes</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <!-- Math -->
+                    <div class="calc-card" data-calc="percentage">
+                        <div class="calc-icon">📈</div>
+                        <h3>Percentage Calculator</h3>
+                        <p>Calculate percentages, increases, and decreases</p>
+                        <div class="calc-badge">Math</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="fraction">
+                        <div class="calc-icon">🔢</div>
+                        <h3>Fraction Calculator</h3>
+                        <p>Add, subtract, multiply, and divide fractions</p>
+                        <div class="calc-badge">Math</div>
+                    </div>
+
+                    <!-- Time & Date -->
+                    <div class="calc-card" data-calc="date">
+                        <div class="calc-icon">📅</div>
+                        <h3>Date Difference</h3>
+                        <p>Calculate time between dates accurately</p>
+                        <div class="calc-badge">Time</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="time-zone">
+                        <div class="calc-icon">🌍</div>
+                        <h3>Time Zone Converter</h3>
+                        <p>Convert time between different time zones</p>
+                        <div class="calc-badge">Time</div>
+                    </div>
+
+                    <!-- Geometry -->
+                    <div class="calc-card" data-calc="area">
+                        <div class="calc-icon">📐</div>
+                        <h3>Area Calculator</h3>
+                        <p>Calculate area of various geometric shapes</p>
+                        <div class="calc-badge">Geometry</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="volume">
+                        <div class="calc-icon">📦</div>
+                        <h3>Volume Calculator</h3>
+                        <p>Calculate volume of 3D shapes and containers</p>
+                        <div class="calc-badge">Geometry</div>
+                    </div>
+
+                    <!-- Converters -->
+                    <div class="calc-card" data-calc="length">
+                        <div class="calc-icon">📏</div>
+                        <h3>Length Converter</h3>
+                        <p>Convert between different length units</p>
+                        <div class="calc-badge">Convert</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="weight">
+                        <div class="calc-icon">⚖️</div>
+                        <h3>Weight Converter</h3>
+                        <p>Convert between different weight units</p>
+                        <div class="calc-badge">Convert</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="temperature">
+                        <div class="calc-icon">🌡️</div>
+                        <h3>Temperature Converter</h3>
+                        <p>Convert between Celsius, Fahrenheit, and Kelvin</p>
+                        <div class="calc-badge">Convert</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="time">
+                        <div class="calc-icon">⏰</div>
+                        <h3>Time Converter</h3>
+                        <p>Convert between various time units</p>
+                        <div class="calc-badge">Convert</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="currency">
+                        <div class="calc-icon">💱</div>
+                        <h3>Currency Converter</h3>
+                        <p>Convert between major world currencies</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="fuel">
+                        <div class="calc-icon">⛽</div>
+                        <h3>Fuel Economy Calculator</h3>
+                        <p>Calculate fuel consumption and efficiency</p>
+                        <div class="calc-badge">Auto</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="mortgage">
+                        <div class="calc-icon">🏠</div>
+                        <h3>Mortgage Calculator</h3>
+                        <p>Calculate monthly mortgage payments and total interest</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="retirement">
+                        <div class="calc-icon">🏖️</div>
+                        <h3>Retirement Calculator</h3>
+                        <p>Plan your retirement savings and goals</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="investment">
+                        <div class="calc-icon">📊</div>
+                        <h3>Investment Calculator</h3>
+                        <p>Calculate investment returns and growth</p>
+                        <div class="calc-badge">Finance</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="tax">
+                        <div class="calc-icon">🧾</div>
+                        <h3>Income Tax Calculator</h3>
+                        <p>Calculate income tax and take-home salary</p>
+                        <div class="calc-badge">Tax</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="lease">
+                        <div class="calc-icon">🚗</div>
+                        <h3>Car Lease Calculator</h3>
+                        <p>Calculate monthly car lease payments</p>
+                        <div class="calc-badge">Auto</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="unit">
+                        <div class="calc-icon">🔄</div>
+                        <h3>Unit Converter</h3>
+                        <p>Convert between various measurement units</p>
+                        <div class="calc-badge">Convert</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="scientific">
+                        <div class="calc-icon">🧪</div>
+                        <h3>Scientific Calculator</h3>
+                        <p>Advanced mathematical calculations and functions</p>
+                        <div class="calc-badge">Math</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="binary">
+                        <div class="calc-icon">💻</div>
+                        <h3>Binary Calculator</h3>
+                        <p>Convert between binary, decimal, and hexadecimal</p>
+                        <div class="calc-badge">Tech</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="gpa">
+                        <div class="calc-icon">🎓</div>
+                        <h3>GPA Calculator</h3>
+                        <p>Calculate cumulative GPA and semester grades</p>
+                        <div class="calc-badge">Education</div>
+                    </div>
+
+                    <div class="calc-card" data-calc="body-fat">
+                        <div class="calc-icon">💪</div>
+                        <h3>Body Fat Calculator</h3>
+                        <p>Calculate body fat percentage using measurements</p>
+                        <div class="calc-badge">Health</div>
+                    </div>
+                </div>
+            </section>
+                        <!-- Content Section -->
+            <section class="content-section">
+                <div class="content-grid">
+                    <div class="content-main">
+                        <h3>Welcome to MultiTool Calc Hub - Your Complete Calculation Solution</h3>
+                        
+                        <p>In today's fast-paced digital world, accurate and efficient calculations are essential for making informed decisions in both personal and professional settings. MultiTool Calc Hub stands as your comprehensive digital companion, offering a sophisticated suite of professional-grade calculators designed to simplify complex mathematical operations and save you valuable time.</p>
+
+                        <p>Our platform represents the perfect fusion of functionality and user experience, delivering powerful computational tools that cater to diverse needs across various industries and personal applications. Whether you're a financial professional analyzing loan structures, a health-conscious individual monitoring your BMI, a business owner calculating taxes and discounts, or a student working on mathematical conversions, our extensive collection of calculators provides the precision and reliability you demand.</p>
+
+                        <h4>Why Choose MultiTool Calc Hub?</h4>
+                        
+                        <p>What sets MultiTool Calc Hub apart from other calculation platforms is our unwavering commitment to excellence in both design and functionality. Every calculator in our suite has been meticulously crafted by experts who understand the nuances of mathematical precision and user interface design. We believe that powerful tools should also be intuitive and accessible, which is why our platform combines advanced computational capabilities with an elegant, user-friendly interface.</p>
+
+                        <p>Privacy and security form the cornerstone of our service philosophy. Unlike many online tools that collect and store your personal data, MultiTool Calc Hub operates on a completely client-side architecture. This means all your calculations are processed locally on your device, ensuring that sensitive financial information, personal health data, and business calculations never leave your computer. Your privacy is not just protected – it's guaranteed by design.</p>
+
+                        <h4>Comprehensive Calculator Collection</h4>
+                        
+                        <p>Our carefully curated selection of calculators covers the most essential calculation needs across multiple domains. The BMI Calculator helps you maintain optimal health by providing accurate body mass index calculations with detailed health category classifications. Our financial calculators, including the Loan Calculator, EMI Calculator, and GST Calculator, empower you to make informed financial decisions with confidence.</p>
+
+                        <p>For business professionals, our Discount Calculator, Percentage Calculator, and Profit Margin Calculator streamline pricing strategies and financial analysis. Students and professionals working with measurements will appreciate our precise Length Converter, Weight Converter, and Temperature Converter tools, which handle conversions between multiple units with scientific accuracy. The Area Calculator and Volume Calculator support various geometric shapes, making them invaluable for construction, design, and educational purposes.</p>
+
+                        <h4>Advanced Features and Capabilities</h4>
+                        
+                        <p>Each calculator incorporates advanced algorithms and error-checking mechanisms to ensure maximum accuracy in all computations. Our Date Difference Calculator, for instance, accounts for leap years and varying month lengths to provide precise temporal calculations. The Currency Converter includes real-time exchange rate approximations for major world currencies, making it perfect for international business and travel planning.</p>
+
+                        <p>The platform's responsive design ensures seamless functionality across all devices – from desktop computers to tablets and smartphones. This cross-platform compatibility means you can access your favorite calculators anytime, anywhere, without compromising on functionality or user experience. The interface automatically adapts to your screen size, maintaining optimal usability regardless of your device.</p>
+
+                        <h4>Professional-Grade Accuracy</h4>
+                        
+                        <p>Accuracy is non-negotiable when it comes to calculations that impact important decisions. Our development team has implemented rigorous testing protocols and validation procedures to ensure every calculator delivers results you can trust. From simple percentage calculations to complex loan amortization schedules, every computation undergoes multiple verification stages before reaching you.</p>
+
+                        <p>We understand that different users have varying levels of mathematical expertise, which is why each calculator includes helpful explanations, clear labeling, and intuitive input validation. Error messages are designed to be informative rather than technical, guiding users toward successful calculations while maintaining the sophisticated functionality that professionals require.</p>
+
+                        <h4>Continuous Innovation and Updates</h4>
+                        
+                        <p>MultiTool Calc Hub represents an ongoing commitment to innovation and improvement. Our development team continuously monitors user feedback, industry trends, and technological advances to enhance existing calculators and develop new tools that meet emerging needs. Regular updates ensure compatibility with the latest browsers and devices while introducing new features that expand the platform's capabilities.</p>
+
+                        <p>The future of MultiTool Calc Hub includes plans for additional specialized calculators, enhanced visualization features, and expanded educational resources. We're committed to evolving with our users' needs while maintaining the core principles of simplicity, accuracy, and privacy that define our platform.</p>
+
+                        <p>Experience the difference that professional-grade calculation tools can make in your daily life. Join thousands of satisfied users who have made MultiTool Calc Hub their go-to resource for reliable, fast, and secure calculations. Start exploring our comprehensive calculator suite today and discover how the right tools can transform the way you approach numerical challenges.</p>
+                    </div>
+                    
+                    <div class="content-sidebar">
+                        <div class="sidebar-card">
+                            <h4>🚀 Quick Start</h4>
+                            <p>Choose any calculator below and start computing instantly. No downloads, no registration required.</p>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h4>🔐 Privacy First</h4>
+                            <p>All calculations happen on your device. We never store or transmit your data.</p>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h4>📊 Professional Grade</h4>
+                            <p>Built for accuracy and reliability. Trusted by professionals worldwide.</p>
+                        </div>
+                        
+                        <div class="sidebar-card">
+                            <h4>💡 Always Free</h4>
+                            <p>Full access to all calculators, forever free. No hidden costs or premium tiers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MultiTool Calc Hub</h3>
+                    <p>Professional calculators for everyday use. Fast, accurate, and completely free. Your trusted partner for all calculation needs.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">🌐</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Access</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#calculators">All Calculators</a></li>
+                        <li><a href="#" onclick="openModal('about')">About Us</a></li>
+                        <li><a href="#" onclick="openModal('contact')">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Popular Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="openCalculator('bmi')">BMI Calculator</a></li>
+                        <li><a href="#" onclick="openCalculator('loan')">Loan Calculator</a></li>
+                        <li><a href="#" onclick="openCalculator('percentage')">Percentage Calculator</a></li>
+                        <li><a href="#" onclick="openCalculator('discount')">Discount Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="openModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openModal('terms')">Terms & Conditions</a></li>
+                        <li><a href="#" onclick="openModal('disclaimer')">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 MultiTool Calc Hub. All rights reserved.</p>
+                    <p>Empowering calculations worldwide 🧮</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Calculator</h2>
+                <span class="close">&times;</span>
+            </div>
+            
+            <div class="modal-tabs">
+                <button class="tab-btn active" data-tab="calculator">Calculator</button>
+                <button class="tab-btn" data-tab="about">About</button>
+                <button class="tab-btn" data-tab="contact">Contact</button>
+                <button class="tab-btn" data-tab="privacy">Privacy</button>
+                <button class="tab-btn" data-tab="disclaimer">Disclaimer</button>
+                <button class="tab-btn" data-tab="terms">Terms</button>
+            </div>
+
+            <div class="modal-body">
+                <div id="calculator-content" class="tab-content active">
+                    <!-- Calculator content will be inserted here -->
+                </div>
+
+                <div id="about-content" class="tab-content">
+                    <h3>About MultiTool Calc Hub</h3>
+                    <p>MultiTool Calc Hub is your comprehensive collection of professional calculators designed to make everyday calculations simple and accurate. Our tools are built with precision and user-friendliness in mind.</p>
+                    <p>Whether you're calculating your BMI, planning a loan, or converting units, our calculators provide reliable results instantly. All calculations are performed locally in your browser for privacy and speed.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>30+ Professional calculators</li>
+                        <li>Mobile-responsive design</li>
+                        <li>No registration required</li>
+                        <li>Instant results</li>
+                        <li>Privacy-focused (no data stored)</li>
+                    </ul>
+                </div>
+
+                <div id="contact-content" class="tab-content">
+                    <h3>Contact Us</h3>
+                    <p>We'd love to hear from you! Get in touch with our team for support, suggestions, or feedback.</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> support@multitoolcalchub.com</p>
+                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p><strong>Address:</strong> 123 Calculator Street, Math City, MC 12345</p>
+                        <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
+                    </div>
+                    <p>For technical support, please include details about your browser and the specific calculator you're using.</p>
+                </div>
+
+                <div id="privacy-content" class="tab-content">
+                    <h3>Privacy Policy</h3>
+                    <p><strong>Last updated:</strong> December 2024</p>
+                    <h4>Information We Collect</h4>
+                    <p>MultiTool Calc Hub does not collect, store, or transmit any personal information. All calculations are performed locally in your browser.</p>
+                    <h4>Data Usage</h4>
+                    <p>We do not store any calculation data, results, or personal information. Your privacy is our priority.</p>
+                    <h4>Cookies</h4>
+                    <p>We may use essential cookies to improve your browsing experience. No tracking cookies are used.</p>
+                    <h4>Third-Party Services</h4>
+                    <p>We do not integrate with third-party analytics or tracking services.</p>
+                    <h4>Contact</h4>
+                    <p>If you have questions about this Privacy Policy, please contact us at privacy@multitoolcalchub.com</p>
+                </div>
+
+                <div id="disclaimer-content" class="tab-content">
+                    <h3>Disclaimer</h3>
+                    <p><strong>Accuracy of Information:</strong> While we strive to provide accurate calculations, MultiTool Calc Hub makes no warranties about the completeness, reliability, or accuracy of the information provided.</p>
+                    <p><strong>Professional Advice:</strong> The calculators provided are for informational purposes only and should not replace professional financial, medical, or legal advice.</p>
+                    <p><strong>Limitation of Liability:</strong> MultiTool Calc Hub shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of our calculators.</p>
+                    <p><strong>Use at Your Own Risk:</strong> Users are responsible for verifying the accuracy of calculations for their specific needs.</p>
+                    <p><strong>Updates:</strong> We reserve the right to modify or discontinue any calculator without notice.</p>
+                    <p><strong>External Links:</strong> We are not responsible for the content of external websites linked from our platform.</p>
+                </div>
+
+                <div id="terms-content" class="tab-content">
+                    <h3>Terms & Conditions</h3>
+                    <p><strong>Last updated:</strong> December 2024</p>
+                    <h4>Acceptance of Terms</h4>
+                    <p>By using MultiTool Calc Hub, you agree to these Terms and Conditions.</p>
+                    <h4>Use License</h4>
+                    <p>You are granted a limited, non-exclusive license to use our calculators for personal and commercial purposes.</p>
+                    <h4>Restrictions</h4>
+                    <ul>
+                        <li>Do not attempt to reverse engineer our calculators</li>
+                        <li>Do not use our service for illegal activities</li>
+                        <li>Do not overload our servers with automated requests</li>
+                    </ul>
+                    <h4>Service Availability</h4>
+                    <p>We strive for 99.9% uptime but do not guarantee uninterrupted service.</p>
+                    <h4>Modifications</h4>
+                    <p>We reserve the right to modify these terms at any time. Continued use constitutes acceptance of new terms.</p>
+                    <h4>Governing Law</h4>
+                    <p>These terms are governed by the laws of the jurisdiction where our company is registered.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
